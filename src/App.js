@@ -12,6 +12,7 @@ import Subscription from './components/Subscription/Subscription';
 import AnnualSubscription from './containers/AnnualSubscription/AnnualSubscription';
 import WithLastLogin from './hoc/WithLastLogin';
 import LifeCycleDemo from './containers/LifeCycleDemo/LifeCycleDemo';
+import ContactForm from './containers/ContactForm/ContactForm';
 
 // Root Comp / Main Comp 
 // Ideal place for Layout 
@@ -42,6 +43,8 @@ function App() {
         </WithLastLogin>
         <hr/>
         <LifeCycleDemo></LifeCycleDemo>
+        <hr/>
+        <ContactForm></ContactForm>
       </div>
       <Footer></Footer>
     </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes, { string, func, number, bool } from 'prop-types'; 
 
 import Channel from '../../components/Channel/Channel';
 
@@ -40,7 +41,8 @@ class ChannelList extends Component {
           <Channel 
             name={this.state.tvChannelList[0].name}
             info={this.state.tvChannelList[0].info}
-            logo={this.state.tvChannelList[0].logo} addToFav={this.changeStateHandler}></Channel>
+            logo={this.state.tvChannelList[0].logo} 
+            addToFav={this.changeStateHandler}></Channel>
           
           <Channel 
             name={this.state.tvChannelList[1].name}
@@ -56,6 +58,13 @@ class ChannelList extends Component {
       </div>
     )
   }
+}
+
+ChannelList.propTypes = {
+  name: string,
+  info: string,
+  logo: string,
+  addToFav: func
 }
 
 export default ChannelList;
