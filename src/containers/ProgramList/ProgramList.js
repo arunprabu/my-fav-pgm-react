@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import Program from './Program/Program';
+import Program from '../../components/Program/Program';
 
 // Class Component 
 class ProgramList extends Component{

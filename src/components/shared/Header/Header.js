@@ -1,15 +1,19 @@
 // Custom Comp
 import React from 'react';
 import Menu from '../Menu/Menu';
+import logo from '../../../images/app-logo.png';
 
 // Functional Comp with Named Function 
 function Header() {
+
+  //const logoURL = process.env.PUBLIC_URL + '/images/app-logo.png';
+
   // returning JSX - 
   return (
     <header>
       <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a className="navbar-brand" href="#">
-          My Fav Program App!</a>
+          <img src={logo} width='32'/> My Fav Program App!</a>
         <button
           className="navbar-toggler"
           type="button"
